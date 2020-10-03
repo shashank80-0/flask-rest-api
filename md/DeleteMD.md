@@ -20,7 +20,7 @@ Delete product(s) by *product_id* (INTEGER)
 ```
 Product(s) Deleted
 ```
-> ### Error Respone
+> ### Error Response
 > - **Code:** 404
 > - **Info:** POST received non-existing *product_id*
 > - **Response Data Example:**
