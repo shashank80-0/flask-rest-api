@@ -31,26 +31,26 @@ Product(s) Updated
 ```
 > ### Error Response
 > - **Code:** 422
+> - **Info:** POST does not received *product_id*  
 > - **Response Data Example:**
 ```
 Mandatory field is missing
 ```
-> **Info:** POST does not received *product_id*  
-
 > - **Code:** 404
+> - **Info:** POST received empty list
 > - **Response Data Example:**
 ```
 No record found
 ```
-> **Info:** POST received empty list
 
 ### PATCH /api/v1/update_product_by_name  
 
-Update product(s) by *product_id* (STRING)
+Update product(s) by *product_name* (STRING)
 
-> - **URL:** `/api/v1/update_product_by_id`
+> - **URL:** `/api/v1/update_product_by_name`
 > - **Method:** PATCH
 > - **Auth Required:** YES
+> - **Request Data Type:** Array (or List) of objects
 > - **Request Data Example:**
 ```json
 [
@@ -75,15 +75,14 @@ Product(s) Updated
 ```
 > ### Error Response
 > - **Code:** 422
+> - **Info:** POST does not received *product_name*
 > - **Response Data Example:**
 ```
 Mandatory field is missing
 ```
-**Info:** POST does not received *product_name*
-
 > - **Code:** 404
+> - **Info:** POST received empty list
 > - **Response Data Example:**
 ```
 No record found
 ```
->**Info:** POST received empty list
