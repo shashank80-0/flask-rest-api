@@ -1,4 +1,4 @@
-### DELETE /api/v1/update_product_by_id  
+### DELETE /api/v1/delete_product_by_id  
 
 Delete product(s) by *product_id* (INTEGER)
 
