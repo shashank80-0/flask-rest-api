@@ -126,7 +126,8 @@ Filter product(s) by *brand_name* (STRING)
 > - **Request Data Type:** Array (or List) of strings
 > - **Request Data Example:**
 ```json
-[
+[   
+    "Apple",
     "Kingston",
     "Lenovo"
 ]
