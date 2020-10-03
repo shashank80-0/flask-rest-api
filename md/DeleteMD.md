@@ -62,7 +62,7 @@ DELETE product(s) by *product_name* (STRING)
 ```
 Product(s) Deleted
 ```
-> ### Error Respone
+> ### Error Response
 > - **Code:** 404
 > - **Info:** POST received non-existing *product_name*
 > - **Response Data Example:**
