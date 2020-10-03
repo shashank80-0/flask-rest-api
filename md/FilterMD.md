@@ -351,4 +351,4 @@ Filter product(s) by minimum *discount* (INTEGER/FLOAT) percentage
 ```
 Invalid Parameters Received
 ```
-> **Info:** POST received non-integer value
+> **Info:** POST received non-integer/non-float value
