@@ -26,7 +26,7 @@ Product(s) Deleted
 ```
 Object not found
 ```
-> **Info:** POST received non-existing *product_id*
+> **Info:** POST received non-existing *product_id*  
 
 > - **Code:** 403
 > - **Response Data Example:**
@@ -40,7 +40,8 @@ Product ids not received
 ```
 Invalid Parameter Received
 ```
-> **Info:** POST received non integer value
+> **Info:** POST received non integer value  
+
 
 ### DELETE /api/v1/delete_product_by_name  
 
