@@ -44,18 +44,17 @@ Filter product(s) by *product_id* (INTEGER)
 ```
 > ### Error Response
 > - **Code:** 403
+> - **Info:** POST received empty list
 > - **Response Data Example:**
 ```
 Product Ids not received
 ```
-> **Info:** POST received empty list
-
 > - **Code:** 404
+> - **Info:** *product_id* does not exist
 > - **Response Data Example:**
 ```
 Object not found
 ```
-> **Info:** *product_id* does not exist
 
 ### POST /api/v1/get_product_by_name  
 
@@ -103,18 +102,17 @@ Filter product(s) by *product_name* (STRING)
 ```
 > ### Error Response
 > - **Code:** 403
+> - **Info:** POST received empty list
 > - **Response Data Example:**
 ```
 Product names not received
 ```
-> **Info:** POST received empty list
-
 > - **Code:** 404
+> - **Info:** *product_name* does not exist
 > - **Response Data Example:**
 ```
 Object not found
 ```
-> **Info:** *product_name* does not exist
 
 ### POST /api/v1/get_product_by_brand  
 
@@ -179,11 +177,11 @@ Filter product(s) by *brand_name* (STRING)
 ```
 > ### Error Response
 > - **Code:** 403
+> - **Info:** POST received empty list
 > - **Response Data Example:**
 ```
 Brand names not received
 ```
-> **Info:** POST received empty list
 
 ### POST /api/v1/get_product_by_category  
 
@@ -237,11 +235,11 @@ Filter product(s) by *category_name* (STRING)
 ```
 > ### Error Response
 > - **Code:** 403
+> - **Info:** POST received empty list
 > - **Response Data Example:**
 ```
 Categories names not received
 ```
-> **Note:** POST received empty list
 
 ### POST /api/v1/get_product_by_price_range  
 
@@ -289,11 +287,11 @@ Filter product(s) by *price* (INTEGER/FLOAT) range (price_1,price_2)
 ```
 > ### Error Response
 > - **Code:** 422
+> - **Info:** POST does not received array(or list) of length 2 or integer/float value
 > - **Response Data Example:**
 ```
 Invalid Request Parameters
 ```
-> **Note:** POST does not received array(or list) of length 2 
 
 ### POST /api/v1/get_product_by_minimum_discount  
 
@@ -347,8 +345,9 @@ Filter product(s) by minimum *discount* (INTEGER/FLOAT) percentage
 ```
 > #### Error Response
 > - **Code:** 400
+> - **Info:** POST does not received integer/float value
 > - **Response Data Example:**
 ```
 Invalid Parameters Received
 ```
-> **Info:** POST received non-integer/non-float value
+
