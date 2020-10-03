@@ -26,7 +26,7 @@ Product(s) Deleted
 ```
 Object not found
 ```
-> **Info:** POST received non-existing *product_name*
+> **Info:** POST received non-existing *product_id*
 
 > - **Code:** 403
 > - **Response Data Example:**
@@ -46,9 +46,10 @@ Invalid Parameter Received
 
 DELETE product(s) by *product_name* (STRING)
 
-> - **URL:** `/api/v1/delete_product_by_id`
->- **Method:** PATCH
+> - **URL:** `/api/v1/delete_product_by_name`
+>- **Method:** DELETE
 > - **Auth Required:** YES
+> - **Request Data Type:** Array (or List) of strings
 > - **Request Data Example:**
 ```json
 [
@@ -69,7 +70,7 @@ Product(s) Deleted
 ```
 Object not found
 ```
-> **Info:** POST received non-existing product_name
+> **Info:** POST received non-existing *product_name*
 
 > - **Code:** 403
 > - **Response Data Example:**
