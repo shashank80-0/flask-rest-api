@@ -46,7 +46,7 @@ Invalid Parameter Received
 
 DELETE product(s) by *product_name* (STRING)
 
-> - **URL:** `/api/v1/update_product_by_id`
+> - **URL:** `/api/v1/delete_product_by_id`
 >- **Method:** PATCH
 > - **Auth Required:** YES
 > - **Request Data Example:**
