@@ -286,11 +286,11 @@ Filter product(s) by *price* (INTEGER/FLOAT) range (price_1,price_2)
 ]
 ```
 > ### Error Response
-> - **Code:** 422
+> - **Code:** 400
 > - **Info:** POST does not received array(or list) of length 2 or integer/float value
 > - **Response Data Example:**
 ```
-Invalid Request Parameters
+Invalid Parameters Received
 ```
 
 ### POST /api/v1/get_product_by_minimum_discount  

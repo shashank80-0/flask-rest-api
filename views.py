@@ -315,9 +315,7 @@ def get_product_by_price_range():
         param_1 = float(price_range[0])
         param_2 = float(price_range[1])
     except ValueError:
-        return format_response("Invalid Request Parameters", 422)
-    except errors.InvalidRequestParametersError:
-        return format_response("Invalid Request Parameters", 422)
+        return format_response("Invalid Parameters Recieved", 400)
     min_price = min(param_1, param_2)
     max_price = max(param_1, param_2)
     products = db.session.execute(constants.PRICE_RANGE_QUERY, {'minimum': min_price, 'maximum': max_price})
