@@ -35,8 +35,8 @@ Product(s) Added
 ```
 > ### Error Response
 > - **Code:** 422
+> - **Info:** POST does not received required fields (*product_name,brand_name,category_name,quantity,price,discount*)
 > - **Response Data Example:**
 ```
 Mandatory field is missing
 ```
-> **Info:** POST does not received required fields (*product_name,brand_name,category_name,quantity,price,discount*)
