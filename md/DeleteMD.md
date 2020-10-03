@@ -22,19 +22,19 @@ Product(s) Deleted
 ```
 > ### Error Respone
 > - **Code:** 404
-> **Info:** POST received non-existing *product_id*
+> - **Info:** POST received non-existing *product_id*
 > - **Response Data Example:**
 ```
 Object not found
 ```
 > - **Code:** 403
-> **Info:** POST received empty list
+>  -**Info:** POST received empty list
 > - **Response Data Example:**
 ```
 Product ids not received
 ```
 > - **Code:** 400
-> **Info:** POST received non integer value  
+> - **Info:** POST received non integer value  
 > - **Response Data Example:**
 ```
 Invalid Parameter Received
@@ -64,18 +64,18 @@ Product(s) Deleted
 ```
 > ### Error Respone
 > - **Code:** 404
+> - **Info:** POST received non-existing *product_name*
 > - **Response Data Example:**
 ```
 Object not found
 ```
-> **Info:** POST received non-existing *product_name*
-
 > - **Code:** 403
+> - **Info:** POST received empty list
 > - **Response Data Example:**
 ```
 Product names not received
 ```
-> **Info:** POST received empty list
+
 
 
 
