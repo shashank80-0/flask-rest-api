@@ -15,6 +15,8 @@ This REST API is created in FLASK
 python main.py
 ```
 
+## API ENDPOINTS
+
 ### POST /api/v1/authenticate_user  
 
 Provide the user with Auth Key
