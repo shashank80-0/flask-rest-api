@@ -2,6 +2,19 @@
 
 This REST API is created in FLASK  
 
+## How to set up
+
+> Update app.config['SQLALCHEMY_DATABASE_URI'] variable to point to your mysql database
+ >> **Format example** - mysql+pymysql://*username*:*password*@*hostname*:*port*/*database_name*
+
+> Install the dependencies mentioned in the requirements.txt
+ >> `pip install -r requirements.txt`
+
+> Run below command line to start API
+```
+python main.py
+```
+
 ### POST /api/v1/authenticate_user  
 
 Provide the user with Auth Key
